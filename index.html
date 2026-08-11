@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samriddhi | Unity 3D Game Developer & Competitive Programmer</title>
+  <meta name="description" content="Personal Portfolio of Samriddhi - Unity 3D Game Developer & Competitive Programmer specializing in physics mechanics, AR experiences, tycoon systems, and high-performance algorithms.">
+  <meta name="keywords" content="Samriddhi, Unity 3D Developer, Game Developer Portfolio, Inverzio, Campusphere, AR Treasure Hunt, Competitive Programming, C#, Codeforces, LeetCode">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background 3D Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">S</div>
+        <div class="logo-text">Samriddhi <span>.Dev</span></div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#overview" class="nav-link active">Overview</a></li>
+        <li><a href="#projects" class="nav-link">My Projects</a></li>
+        <li><a href="#cp-dsa" class="nav-link">CP & DSA</a></li>
+        <li><a href="#skills" class="nav-link">My Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact Me</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://sammyverse0.itch.io/inverzio" target="_blank" rel="noopener" class="btn-primary">
+          <i class="fas fa-gamepad"></i> Play Inverzio
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="overview" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <div class="hero-badge-dot"></div>
+            Unity 3D Developer & Algorithm Specialist
+          </div>
+          
+          <h1 class="hero-title">
+            Crafting Immersive <span class="gradient-text">Game Mechanics</span> & Interactive Physics
+          </h1>
+          
+          <p class="hero-subtitle">
+            Hi, I'm <strong style="color: var(--text-main);">Samriddhi</strong> — a passionate Unity 3D Game Developer and Competitive Programmer. I build high-performance games, gravity-defying endless runners, AR applications, and complex simulation engines backed by solid Data Structures and Algorithmic problem-solving.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn-primary">
+              <i class="fas fa-rocket"></i> Explore My Games
+            </a>
+            <a href="#cp-dsa" class="btn-secondary">
+              <i class="fas fa-code"></i> My CP Profiles
+            </a>
+            <a href="https://github.com/Sammyverse0" target="_blank" rel="noopener" class="btn-secondary">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">3<span>+</span></div>
+              <div class="stat-label">Featured Games/Apps</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">Unity<span>3D</span></div>
+              <div class="stat-label">My Primary Engine</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">CP<span>& DSA</span></div>
+              <div class="stat-label">Algorithmic Mastery</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="unity-tech-card">
+            <div class="card-header-flex">
+              <div class="engine-tag">
+                <i class="fab fa-unity"></i> My Unity Tech Stack
+              </div>
+              <div class="status-pill"><i class="fas fa-circle-notch fa-spin"></i> Active Dev</div>
+            </div>
+
+            <div class="unity-core-features">
+              <div class="core-feature-row">
+                <span class="feature-name"><i class="fas fa-bolt"></i> Mechanics Engine</span>
+                <span class="feature-value">Custom Gravity Flip</span>
+              </div>
+              <div class="core-feature-row">
+                <span class="feature-name"><i class="fas fa-vr-cardboard"></i> Spatial Tech</span>
+                <span class="feature-value">AR Foundation</span>
+              </div>
+              <div class="core-feature-row">
+                <span class="feature-name"><i class="fas fa-palette"></i> UI/UX Design</span>
+                <span class="feature-value">Unity UI Toolkit / UGUI</span>
+              </div>
+              <div class="core-feature-row">
+                <span class="feature-name"><i class="fas fa-laptop-code"></i> Primary Language</span>
+                <span class="feature-value">C# / C++</span>
+              </div>
+            </div>
+
+            <div class="quick-links-box">
+              <a href="https://sammyverse0.itch.io/" target="_blank" rel="noopener" class="social-icon-btn" title="My Itch.io Developer Profile">
+                <i class="fab fa-itch-io"></i>
+              </a>
+              <a href="https://github.com/Sammyverse0" target="_blank" rel="noopener" class="social-icon-btn" title="My GitHub Profile">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/samriddhi-kushwaha-6b7841312" target="_blank" rel="noopener" class="social-icon-btn" title="My LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://codeforces.com/profile/samriddhi2705" target="_blank" rel="noopener" class="social-icon-btn" title="My Codeforces Profile">
+                <i class="fas fa-terminal"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">My Game Portfolio</div>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects & Games</span></h2>
+        <p class="section-subtitle">A showcase of my Unity 3D games, custom physics mechanics, simulation engines, and augmented reality applications.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Inverzio -->
+        <article class="project-card">
+          <div class="project-img-wrapper">
+            <img src="./assets/inverzio.png" alt="Inverzio Unity 3D Endless Runner Game" class="project-img" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-badge-top"><i class="fas fa-play"></i> Playable Title</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Inverzio</h3>
+            <div class="project-desc">
+              <ul class="project-feature-list">
+                <li><strong>Core Gravity-Flipping Mechanic:</strong> Instantly flip gravity to run on the ceiling and avoid impossible obstacles.</li>
+                <li><strong>Endless Procedural Generation:</strong> The track is built in real-time, offering infinite replayability.</li>
+                <li><strong>Dynamic Difficulty:</strong> As your score climbs, new and more challenging level chunks are unlocked and added to the mix.</li>
+                <li><strong>Coin Collection & High Score System:</strong> Weave through obstacles to collect coins and chase a new personal best.</li>
+                <li><strong>Full Audio Control:</strong> A settings menu with a persistent volume slider lets you customize your audio experience.</li>
+                <li><strong>Pause System:</strong> Need a break? A fully functional pause menu has you covered.</li>
+              </ul>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Unity 3D</span>
+              <span class="tag">C#</span>
+              <span class="tag">Custom Physics</span>
+              <span class="tag">Gravity Flip</span>
+              <span class="tag">Endless Runner</span>
+              <span class="tag">Procedural Gen</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://sammyverse0.itch.io/inverzio" target="_blank" rel="noopener" class="project-btn project-btn-primary">
+                <i class="fab fa-itch-io"></i> Play on Itch.io
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Campusphere -->
+        <article class="project-card">
+          <div class="project-img-wrapper">
+            <img src="./assets/campusphere.png" alt="Campusphere Tycoon Game Walkthrough" class="project-img" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-badge-top"><i class="fas fa-users"></i> Team Project</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Campusphere</h3>
+            <p class="project-desc">
+              The core concept was inspired by a tycoon game — where making eco-friendly choices earns you Green Index Points, helping you build and grow your own virtual college.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Unity 3D</span>
+              <span class="tag">C#</span>
+              <span class="tag">Tycoon Sim</span>
+              <span class="tag">Green Index Points</span>
+              <span class="tag">Campus Management</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://www.linkedin.com/posts/samriddhi-kushwaha-6b7841312_team-activity-7375761178637283328-1-dy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-AjqsBoO-8IcFIrd_vVpd5jf0WVAAFiRo" target="_blank" rel="noopener" class="project-btn project-btn-primary">
+                <i class="fab fa-linkedin"></i> Watch Walkthrough
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: AR Treasure Hunt App -->
+        <article class="project-card">
+          <div class="project-img-wrapper">
+            <img src="./assets/ar_treasure_hunt.png" alt="AR Treasure Hunt Level Unlock App" class="project-img" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-badge-top"><i class="fas fa-user-astronaut"></i> Solo Dev</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">AR Treasure Hunt App</h3>
+            <p class="project-desc">
+              The app uses level unlock system and point system. The 1st three levels are unlocked by default, player needs to clear the three levels to proceed further. The levels consist of a riddle and a hint, hint uses some points, to clear the level a person needs to solve the riddle and scan the answer in real world. Every level rewards some points.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Unity 3D</span>
+              <span class="tag">AR Foundation</span>
+              <span class="tag">Solo Developer</span>
+              <span class="tag">Level Unlock System</span>
+              <span class="tag">Riddle Mechanics</span>
+              <span class="tag">Point System</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://www.linkedin.com/posts/samriddhi-kushwaha-6b7841312_unity-ar-augmentedreality-activity-7464890096459354112-s-3t?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-AjqsBoO-8IcFIrd_vVpd5jf0WVAAFiRo" target="_blank" rel="noopener" class="project-btn project-btn-primary">
+                <i class="fab fa-linkedin"></i> Watch AR Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Competitive Programming & DSA Section -->
+  <section id="cp-dsa" class="cp-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Algorithmic Mastery</div>
+        <h2 class="section-title">Competitive Programming <span class="gradient-text">& DSA</span></h2>
+        <p class="section-subtitle">Beyond game development, I actively solve complex algorithmic problems, optimizing time & space complexity across global CP platforms.</p>
+      </div>
+
+      <div class="cp-grid">
+        
+        <!-- Codeforces -->
+        <a href="https://codeforces.com/profile/samriddhi2705" target="_blank" rel="noopener" class="cp-card">
+          <div class="cp-card-header">
+            <div class="cp-platform-info">
+              <div class="cp-icon-wrap"><i class="fas fa-code-branch"></i></div>
+              <div>
+                <div class="cp-platform-name">Codeforces</div>
+                <div class="cp-username">@samriddhi2705</div>
+              </div>
+            </div>
+            <i class="fas fa-external-link-alt cp-arrow-icon"></i>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            I regularly compete in timed contest rounds focusing on Greedy strategies, Math logic, Constructive Algorithms, and Implementation.
+          </p>
+          <div class="cp-stats-grid">
+            <div class="cp-stat-box">
+              <div class="cp-stat-lbl">Handle</div>
+              <div class="cp-stat-val">samriddhi2705</div>
+            </div>
+            <div class="cp-stat-box">
+              <div class="cp-stat-lbl">Platform</div>
+              <div class="cp-stat-val">Codeforces</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Codechef -->
+        <a href="https://www.codechef.com/users/extra_owls_52" target="_blank" rel="noopener" class="cp-card">
+          <div class="cp-card-header">
+            <div class="cp-platform-info">
+              <div class="cp-icon-wrap"><i class="fas fa-utensils"></i></div>
+              <div>
+                <div class="cp-platform-name">CodeChef</div>
+                <div class="cp-username">@extra_owls_52</div>
+              </div>
+            </div>
+            <i class="fas fa-external-link-alt cp-arrow-icon"></i>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            I solve algorithmic challenges in Starters & Long contests, specializing in Number theory, Strings, Two pointers, and Brute force optimization.
+          </p>
+          <div class="cp-stats-grid">
+            <div class="cp-stat-box">
+              <div class="cp-stat-lbl">Handle</div>
+              <div class="cp-stat-val">extra_owls_52</div>
+            </div>
+            <div class="cp-stat-box">
+              <div class="cp-stat-lbl">Platform</div>
+              <div class="cp-stat-val">CodeChef</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- LeetCode -->
+        <a href="https://leetcode.com/u/sammy_verse0/" target="_blank" rel="noopener" class="cp-card">
+          <div class="cp-card-header">
+            <div class="cp-platform-info">
+              <div class="cp-icon-wrap"><i class="fas fa-laptop-code"></i></div>
+              <div>
+                <div class="cp-platform-name">LeetCode</div>
+                <div class="cp-username">@sammy_verse0</div>
+              </div>
+            </div>
+            <i class="fas fa-external-link-alt cp-arrow-icon"></i>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            I maintain consistent Data Structures practice, mastering Hashing, Binary search, Geometry, and Advanced sorting techniques.
+          </p>
+          <div class="cp-stats-grid">
+            <div class="cp-stat-box">
+              <div class="cp-stat-lbl">Handle</div>
+              <div class="cp-stat-val">sammy_verse0</div>
+            </div>
+            <div class="cp-stat-box">
+              <div class="cp-stat-lbl">Platform</div>
+              <div class="cp-stat-val">LeetCode</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Algorithmic Skill Chips -->
+      <div class="cp-topics-container">
+        <div class="cp-topics-title">
+          <i class="fas fa-brain"></i> My Competitive Programming Topics & Core Competencies
+        </div>
+        <div class="cp-topic-chips">
+          <span class="topic-chip"><i class="fas fa-bolt"></i> greedy</span>
+          <span class="topic-chip"><i class="fas fa-calculator"></i> math</span>
+          <span class="topic-chip"><i class="fas fa-code"></i> implementation</span>
+          <span class="topic-chip"><i class="fas fa-font"></i> strings</span>
+          <span class="topic-chip"><i class="fas fa-hammer"></i> brute force</span>
+          <span class="topic-chip"><i class="fas fa-sort-amount-down"></i> sortings</span>
+          <span class="topic-chip"><i class="fas fa-shapes"></i> constructive algorithms</span>
+          <span class="topic-chip"><i class="fas fa-infinity"></i> number theory</span>
+          <span class="topic-chip"><i class="fas fa-arrows-alt-h"></i> two pointers</span>
+          <span class="topic-chip"><i class="fas fa-search"></i> binary search</span>
+          <span class="topic-chip"><i class="fas fa-hashtag"></i> hashing</span>
+          <span class="topic-chip"><i class="fas fa-drafting-compass"></i> geometry</span>
+          <span class="topic-chip"><i class="fas fa-cubes"></i> data structures</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Technical Competencies</div>
+        <h2 class="section-title">My Skills & <span class="gradient-text">Technologies</span></h2>
+        <p class="section-subtitle">A breakdown of my game development abilities, Unity design skills, programming languages, and software engineering practices.</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Game Engine, Design & Mechanics -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fab fa-unity"></i></div>
+            <h3 class="category-title">Game Development & Design</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Unity 3D Engine</span>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="95%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">C# Scripting & Architecture</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Game Design</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Unity UI/UX Design</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Custom Physics & Gravity Mechanics</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">AR Foundation / Augmented Reality</span>
+                <span class="skill-level">82%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="82%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Computer Science & CS Core -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-cubes"></i></div>
+            <h3 class="category-title">Algorithms & CS Core</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Data Structures & Algorithms</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="92%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">C++ Programming</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Game Design Patterns & State Machines</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Tycoon & Economy Systems</span>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Web -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-wrench"></i></div>
+            <h3 class="category-title">Tools & Web Tech</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git & GitHub Version Control</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Itch.io Game Publishing</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5, CSS3, JavaScript</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">WebGL Builds & Optimization</span>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-level="80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Social Hub -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Connect With <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Interested in collaboration, game development roles, or algorithmic discussions? Feel free to reach out to me across my profiles!</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Cards -->
+        <div class="contact-info-card">
+          <h3 class="contact-info-title">Let's Build Games Together</h3>
+          <p class="contact-info-desc">
+            I am open for Unity 3D game development projects, gameplay programming roles, AR applications, and competitive programming collaborations.
+          </p>
+
+          <div class="contact-links-list">
+            <a href="https://sammyverse0.itch.io/" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-icon"><i class="fab fa-itch-io"></i></div>
+              <div>
+                <div class="contact-label">My Itch.io Games Page</div>
+                <div class="contact-val">sammyverse0.itch.io</div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/samriddhi-kushwaha-6b7841312" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <div class="contact-label">My LinkedIn Profile</div>
+                <div class="contact-val">linkedin.com/in/samriddhi-kushwaha</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/Sammyverse0" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <div class="contact-label">My GitHub Repositories</div>
+                <div class="contact-val">github.com/Sammyverse0</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. alex@studio.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Project Details / Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell me about your game idea, role, or collaboration..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+              <i class="fas fa-paper-plane"></i> Send Direct Message to Me
+            </button>
+            <div id="form-status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="logo-text" style="font-size: 1.2rem;">Samriddhi <span>.Dev</span></div>
+      <p class="footer-text">
+        Designed & Built with <i class="fas fa-heart footer-heart"></i> by <strong>Samriddhi</strong> • Unity 3D Game Developer & Competitive Programmer
+      </p>
+      <p style="font-size: 0.8rem; color: var(--text-muted);">
+        Theme: Crimson Glow (#8E1616, #1D1616, #D84040, #EEEEEE)
+      </p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
